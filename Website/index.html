@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Piano Accompaniment Generator</title>
+	<link rel="stylesheet" href = "./master.css" type ="text/css">
+	<script src="jquery-1.10.2.min.js"></script>
+	<meta name="author" content="Hidy Kong">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/2cols.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/4cols.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/7cols.css" media="all">
+	<link rel="stylesheet" href="css/8cols.css" media="all">
+	<link rel="stylesheet" href="css/9cols.css" media="all">
+	<link rel="stylesheet" href="css/10cols.css" media="all">
+	<link rel="stylesheet" href="css/11cols.css" media="all">
+	<link rel="stylesheet" href="css/12cols.css" media="all">
+
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+
+</head>
+<body>
+	<div id = "header">
+	<div id = "nav">
+		<a id ="logo" href="/">Piano Accompaniment Generator</a>
+		<ul>
+			<li id = "navHome">
+				<a href="#" style="color: rgb(172, 171, 171);">PAG</a>
+			</li>
+			<li id = "navAuthor">
+				<a href="author.html" style="color: rgb(172, 171, 171);">Author</a>
+			</li>
+			<li id = "Documentation">
+				<a href="doc" style="color: rgb(172, 171, 171);">Documentation</a>
+			</li>
+		</ul>
+		<div id ="underline" style="left: 14px; width: 68px;" />
+	</div>
+	<h2>Welcome to Piano Accompaniment Generator</h2>
+	<form name="myform" action="./cgi-bin/serverscript.py" method="POST">
+	<br  />
+	Enter Tune Title: 
+	<br  />
+	<input name="tunename" type="text"  />
+	<br  />
+	<input type="submit" value="submit">
+	</form>
+
+	<hr/>
+	<table>
+		<tr><td>Tune Title</td><td>Description</td><td>URL</td></tr>
+		<tr><td>[The first Noel, the angel did say]</td><td>The_First_Noel.xml</td><td>http://www.hymnary.org/media/fetch/86780</td></tr>
+		<tr><td>[Rock of ages, hide my soul]</td><td>The_Tested_Rock.xml</td><td>http://www.hymnary.org/media/fetch/86784</td></tr>
+		<tr><td>[I am resting in Jesus, hallelujah! I know]</td><td>Resting_in_Jesus.xml</td><td>http://www.hymnary.org/media/fetch/86809</td></tr>
+		<tr><td>[Back to the blessed old Bible]</td><td>Back_to_the_Blessed_Old_Bible.xml</td><td>http://www.hymnary.org/media/fetch/86850</td></tr>
+		<tr><td>[The hour of my departure]</td><td>The_Hour_of_My_Departure.xml</td><td>http://www.hymnary.org/media/fetch/86898</td></tr>
+		<tr><td>[More like the Master I would ever be]</td><td>More_Like_the_Master.xml</td><td>http://www.hymnary.org/media/fetch/86961</td></tr>
+		<tr><td>CLEANSING FOUNTAIN</td><td>There_Is_a_Fountain.xml</td><td>http://www.hymnary.org/media/fetch/86977</td></tr>
+		<tr><td>SWEET BY AND BY</td><td>I_Believe_We_Shall_Win.xml</td><td>http://www.hymnary.org/media/fetch/87102</td></tr>
+		<tr><td>TOPLADY</td><td>Rock_of_Ages.xml</td><td>http://www.hymnary.org/media/fetch/87451</td></tr>
+		<tr><td>[To God be the glory, great things He hath done]</td><td>To_God_Be_the_Glory_Crosby.xml</td><td>http://www.hymnary.org/media/fetch/87791</td></tr>
+		<tr><td></td></tr>
+	</table>
+
+</body>
+</html>
